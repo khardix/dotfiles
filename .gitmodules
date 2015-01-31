@@ -1,0 +1,9 @@
+[submodule "zsh"]
+	path = zsh
+	url = git@github.com:khardix/zsh-config.git
+[submodule "vim"]
+	path = vim
+	url = git@github.com:khardix/vim-config.git
+[submodule "newsbeuter"]
+	path = newsbeuter
+	url = git@github.com:khardix/newsbeuter-config.git
