@@ -1,0 +1,12 @@
+# Language options
+alang=jpn,eng,cze
+slang=eng,cze
+
+# Subtitle font
+sub-text-font='Linux Biolinum O'
+sub-text-color='#FFFFF0'
+sub-text-border-color='#3B0000'
+
+# Video over internet
+cache-secs=10
+cache-pause=yes # Video buffering
