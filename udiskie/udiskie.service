@@ -1,0 +1,10 @@
+[Unit]
+Description=Udisks 1/2 wrapper and automounter
+After=sockets.target
+
+[Service]
+ExecStart=/usr/bin/udiskie
+Restart=always
+
+[Install]
+WantedBy=default.target
