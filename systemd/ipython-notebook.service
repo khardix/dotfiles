@@ -1,0 +1,9 @@
+[Unit]
+Description=Ipython3 notebook server
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/ipython3 notebook --no-browser --notebook-dir=Documents/notes
+
+[Install]
+WantedBy=default.target
