@@ -1,0 +1,41 @@
+- clean: ['~', '~/.config']
+
+- shell:
+    - [git submodule update --init --recursive, Installing configuration submodules]
+
+- link:
+    # VIM
+    ~/.vim: vim/
+    ~/.vimrc: vim/vimrc
+    ~/.gvimrc: vim/gvimrc
+    # ZSH
+    ~/.zshenv: zsh/01-zshenv
+    ~/.zprofile: zsh/02-zprofile
+    ~/.zshrc:
+      force: true
+      path: zsh/03-zshrc
+    ~/.zlogin: zsh/04-zlogin
+    ~/.zlogout: zsh/05-zlogout
+    # Newsbeuter
+    ~/.config/newsbeuter: newsbeuter/
+
+    # dunst
+    ~/.config/dunst/dunstrc:
+      create: true
+      path: dunstrc
+    # MPD
+    ~/.mpdscribble/mpdscribble.conf:
+      create: true
+      path: mpdscribble/mpdscribble.conf
+    # MPV
+    ~/.config/mpv/config:
+      create: true
+      force: true
+      path: mpv/config
+    # tmux
+    ~/.tmux.conf:
+      path: tmux/tmux.conf
+      force: true
+    # udiskie
+    ~/.config/udiskie: udiskie/
+    ~/.config/systemd/user/udiskie.service: udiskie/udiskie.service

@@ -1,21 +1,16 @@
-# vim: set filetype=zsh:
+#!/usr/bin/env bash
 
-# Setup script for easy install of config files
-# It assumes to be run in prepared empty directory for storing configs
-# Requirements: git zsh vim
+# Exit after failed command
+set -e
 
-# First of all, clone self wit all submodules
-git clone --recursive git@github.com:khardix/dotfiles.git .
-git submodule foreach git checkout master
+# Dotbot configuration
+CONFIG="dotbot.conf.yaml"
+DOTBOT_MODULE="dotbot"
+DOTBOT_BIN="bin/dotbot"
 
-# Submodules should have their own setup scripts, run them
-git submodule foreach "test -r setup.sh && $SHELL setup.sh || :"
+BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-# Setup remaining configs
-function test_and_link
-{
-  test -h "$1" || ln -s $2 $1
-}
-
-# ### Tmux ###
-test_and_link "$HOME/.tmux.conf" "$PWD/tmux/tmux.conf"
+# Run dotbot
+cd "$BASEDIR"
+git submodule update --init --recursive "$DOTBOT_MODULE"
+"$BASEDIR/$DOTBOT_MODULE/$DOTBOT_BIN" -v -d "$BASEDIR" -c "$CONFIG" "${@}"

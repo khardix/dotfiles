@@ -7,3 +7,6 @@
 [submodule "newsbeuter"]
 	path = newsbeuter
 	url = git@github.com:khardix/newsbeuter-config.git
+[submodule "dotbot"]
+	path = dotbot
+	url = https://github.com/anishathalye/dotbot.git
