@@ -38,4 +38,6 @@
       force: true
     # udiskie
     ~/.config/udiskie: udiskie/
-    ~/.config/systemd/user/udiskie.service: udiskie/udiskie.service
+    ~/.config/systemd/user/udiskie.service:
+      path: udiskie/udiskie.service
+      create: true
