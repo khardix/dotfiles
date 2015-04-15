@@ -2,6 +2,7 @@
 
 - shell:
     - [git submodule update --init --recursive, Installing configuration submodules]
+    - [mkdir -p ~/.local/share/task, Creating taskwarrior data dir]
 
 - link:
     # VIM
@@ -32,6 +33,10 @@
       create: true
       force: true
       path: mpv/config
+    # taskwarrior
+    ~/.taskrc:
+      path: taskwarrior/taskrc
+      firce: true
     # tmux
     ~/.tmux.conf:
       path: tmux/tmux.conf
