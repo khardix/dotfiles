@@ -3,6 +3,7 @@ Description=Udisks 1/2 wrapper and automounter
 After=sockets.target
 
 [Service]
+Environment=DISPLAY=:0
 ExecStart=/usr/bin/udiskie
 Restart=always
 
