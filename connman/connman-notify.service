@@ -1,0 +1,10 @@
+[Unit]
+Description=Notifications for connman
+After=dunst.service
+
+[Service]
+ExecStart=/usr/bin/connman-notify
+Restart=always
+
+[Install]
+WantedBy=default.target

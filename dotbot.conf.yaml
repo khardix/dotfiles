@@ -36,7 +36,7 @@
     # taskwarrior
     ~/.taskrc:
       path: taskwarrior/taskrc
-      firce: true
+      force: true
     # tmux
     ~/.tmux.conf:
       path: tmux/tmux.conf
@@ -46,3 +46,7 @@
     ~/.config/systemd/user/udiskie.service:
       path: udiskie/udiskie.service
       create: true
+    # connman
+    ~/.config/autostart/connman-ui-gtk.desktop: connman/connman-ui-gtk.desktop
+    ~/.config/systemd/user/connman-notify.service: connman/connman-notify.service
+

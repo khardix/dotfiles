@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Connman Network Manager
+Name[cs]=Správce sítí Connman
+Comment=Manage your network connections
+Comment[cs]=Spravovat svá připojení k síti
+Exec=connman-ui-gtk
+Terminal=false
+Type=Application
+NoDisplay=true
+NotShowIn=KDE;
