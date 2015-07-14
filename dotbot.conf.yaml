@@ -3,6 +3,7 @@
 - shell:
     - [git submodule update --init --recursive, Installing configuration submodules]
     - [mkdir -p ~/.local/share/task, Creating taskwarrior data dir]
+    - [mkdir -p ~/.config, Creating default config directory]
 
 - link:
     # VIM
@@ -47,6 +48,5 @@
       path: udiskie/udiskie.service
       create: true
     # connman
-    ~/.config/autostart/connman-ui-gtk.desktop: connman/connman-ui-gtk.desktop
     ~/.config/systemd/user/connman-notify.service: connman/connman-notify.service
 
