@@ -1,9 +1,10 @@
 - clean: ['~', '~/.config']
 
 - shell:
-    - [git submodule update --init --recursive, Installing configuration submodules]
-    - [mkdir -p ~/.local/share/task, Creating taskwarrior data dir]
     - [mkdir -p ~/.config, Creating default config directory]
+    - [mkdir -p ~/.local/share/task, Creating taskwarrior data dir]
+    - [git submodule update --init --recursive, Installing configuration submodules]
+    - [git submodule foreach --recursive git checkout master, Switch configuration submodules to master branch]
 
 - link:
     # VIM
