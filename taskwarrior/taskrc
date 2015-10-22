@@ -28,8 +28,7 @@ include /usr/share/doc/task/rc/dark-red-256.theme
 #include /usr/share/doc/task/rc/solarized-dark-256.theme
 #include /usr/share/doc/task/rc/solarized-light-256.theme
 #include /usr/share/doc/task/rc/no-color.theme
-taskd.server=freecinc.com:53589
-taskd.key=~/.local/share/task/freecinc_1ac05506.key.pem
-taskd.certificate=~/.local/share/task/freecinc_1ac05506.cert.pem
-taskd.ca=~/.local/share/task/freecinc_1ac05506.ca.pem
-taskd.credentials=FreeCinc/freecinc_1ac05506/556e97e4-5850-45bd-98e1-b3a24955a1f6
+
+include ~/.task-syncrc
+taskd.trust=strict
+taskd.ciphers=NORMAL
