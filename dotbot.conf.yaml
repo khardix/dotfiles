@@ -51,3 +51,5 @@
     # connman
     ~/.config/systemd/user/connman-notify.service: connman/connman-notify.service
 
+    # XCompose
+    ~/.XCompose: XCompose
