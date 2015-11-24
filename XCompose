@@ -55,8 +55,13 @@ include "%L"
 <Multi_key> <slash> <underscore>            : "∠" U2220
 <Multi_key> <exclam> <3>                    : "ℇ" U2107
 <Multi_key> <f> <comma>                     : "ƒ" U0192
+<Multi_key> <exclam> <exclam>               : "¬" U00AC  # NOT sign
 # Math arrows
-# TODO: Find unconflicting combinations
+<Multi_key> <less> <underscore>             : "⇐" U21D0  # Back Implies
+<Multi_key> <underscore> <greater>          : "⇒" U21D2  # Implies
+<Multi_key> <underscore> <less> <greater>   : "⇔" U21D4  # Equivalent
+<Multi_key> <bar> <underscore> <greater>    : "⇏" U21CF  # Not implies
+<Multi_key> <bar> <underscore> <less> <greater> : "⇎" U21CE # Not equivalent
 # Greek letters and things based on them
 <Multi_key> <slash> <greater>               : "∆" U2206  # not capital delta
 <Multi_key> <plus> <plus>                   : "∑" U2211  # not capital sigma
