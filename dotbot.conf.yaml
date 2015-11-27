@@ -53,3 +53,5 @@
 
     # XCompose
     ~/.XCompose: XCompose
+    # latexmk
+    ~/.latexmkrc: latexmkrc
