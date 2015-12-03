@@ -6,7 +6,6 @@ User khardix@gmail.com
 PassCmd "gpg2 --quiet --for-your-eyes-only --no-tty --decrypt ~/system/mail/.secrets/gmail.gpg"
 # Use communication ciphering
 SSLType IMAPS
-CertificateFile /etc/ssl/certs/ca-bundle.crt
 
 # Remote Gmail
 IMAPStore gmail-remote
