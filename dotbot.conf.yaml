@@ -22,6 +22,9 @@
     # Newsbeuter
     ~/.config/newsbeuter: newsbeuter/
 
+    # E-mail
+    ~/.mbsyncrc: mail/mbsyncrc
+
     # dunst
     ~/.config/dunst/dunstrc:
       create: true

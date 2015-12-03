@@ -1,0 +1,44 @@
+# Gmail sync
+IMAPAccount gmail
+# Account info
+Host imap.gmail.com
+User khardix@gmail.com
+PassCmd "gpg2 --quiet --for-your-eyes-only --no-tty --decrypt ~/system/mail/.secrets/gmail.gpg"
+# Use communication ciphering
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-bundle.crt
+
+# Remote Gmail
+IMAPStore gmail-remote
+Account gmail
+
+# Local Gmail
+MaildirStore gmail-local
+Path ~/system/mail/gmail/
+Inbox ~/system/mail/gmail/Inbox
+
+Create Slave
+SyncState *
+
+# Gmail separated sync
+
+Channel sync-gmail-default
+Master  :gmail-remote:
+Slave   :gmail-local:
+Patterns "INBOX"
+# To get the list of valid directories, uncomment this and run `mbsync -l`
+#Patterns *
+
+# Localized directories renamed to saner ones
+Channel sync-gmail-archive
+Master  :gmail-remote:"[Gmail]/V&AWE-echny zpr&AOE-vy"
+Slave   :gmail-local:archive
+
+Channel sync-gmail-sent
+Master  :gmail-remote:"[Gmail]/Odeslan&AOE- po&AWE-ta"
+Slave   :gmail-local:sent
+
+Group gmail
+Channel sync-gmail-default
+Channel sync-gmail-archive
+Channel sync-gmail-sent
