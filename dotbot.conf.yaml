@@ -30,6 +30,10 @@
       create: true
       path: dunstrc
     # MPD
+    ~/.config/systemd/user/mpd.socket:
+      path: mpd/mpd.socket
+      create: true
+      force: true
     ~/.mpdscribble/mpdscribble.conf:
       create: true
       path: mpdscribble/mpdscribble.conf
