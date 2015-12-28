@@ -29,6 +29,10 @@
     ~/.config/dunst/dunstrc:
       create: true
       path: dunstrc
+    # git
+    ~/.config/git/config:
+      create: true
+      path: gitconfig
     # MPD
     ~/.config/systemd/user/mpd.socket:
       path: mpd/mpd.socket

@@ -1,0 +1,11 @@
+[core]
+  pager = less -SR
+
+[merge]
+  conflictstyle = diff3
+
+[push]
+  default = current
+
+[credential]
+  helper = cache
