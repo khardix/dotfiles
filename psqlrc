@@ -1,0 +1,36 @@
+-- PostgreSQL CLI client configuration
+-- Adapted from https://github.com/eevee/rc/blob/master/.psqlrc
+
+-- No echo when applying commands from config
+\set QUIET on
+
+-- Display how long each statement took
+\timing on
+
+-- Automatically undo on error when in interactive mode
+\set ON_ERROR_ROLLBACK interactive
+-- More verbose error descriptions
+\set VERBOSITY verbose
+
+-- Prompt 1: Normal prompt
+\set PROMPT1 '%[%033[0;33m%]%n@%M%[%033[0m%]/%[%033[0;1;32m%]%/%R%[%033[0m%] ⚒ '
+-- Prompt 2: Continuation
+\set PROMPT2 '%[%033[1;30m%]...%[%033[0m%] %R '
+
+-- History file
+\set HISTFILE ~/.psql_history- :DBNAME
+-- History behaviour
+\set HISTCONTROL ignoredups
+
+-- Complete SQL keywords in uppercase
+\set COMP_KEYWORD_CASE upper
+
+-- Draw tables with unicode symbols
+\pset linestyle unicode
+-- NULL value indicator
+\pset null ∅
+
+-- Turn on echo again
+\unset QUIET
+
+-- vim:set ft=sql:

@@ -42,6 +42,8 @@
       create: true
       force: true
       path: mpv/config
+    # PostgreSQL CLI
+    ~/.psqlrc: psqlrc
     # taskwarrior
     ~/.taskrc:
       path: taskwarrior/taskrc
