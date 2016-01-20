@@ -116,3 +116,7 @@ include "%L"
 <Multi_key> <ampersand> <w>                 : "ψ" U03c8
 <Multi_key> <ampersand> <Q>                 : "Ω" U03a9
 <Multi_key> <ampersand> <q>                 : "ω" U03c9
+
+# Emoticons
+# Smiley face is in core
+<Multi_key> <semicolon> <parenright>        : "😉" U1f609 # Winking face
