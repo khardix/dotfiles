@@ -21,6 +21,10 @@
     ~/.zlogout: zsh/05-zlogout
     # Newsbeuter
     ~/.config/newsbeuter: newsbeuter/
+    # Weechat
+    ~/.weechat:
+      force: true
+      path: weechat
 
     # E-mail
     ~/.mbsyncrc: mail/mbsyncrc
