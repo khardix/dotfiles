@@ -1,0 +1,16 @@
+# vim:set filetype=dosini:
+
+theme = solarized_dark.theme
+prompt_suffix = ": "
+search_threads_sort_order = newest_first
+editor_cmd = vim -f -c 'set filetype=mail' -c 'setlocal textwidth=80' +/^$ +noh
+prefer_plaintext = 1
+
+[accounts]
+
+[[gmail]]
+realname = Jan Khardix Staněk
+address = khardix@gmail.com
+# sendmail_command =
+# sent_box =
+# draft_box =

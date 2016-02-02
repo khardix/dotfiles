@@ -29,6 +29,7 @@
     # E-mail
     ~/.mbsyncrc: mail/mbsyncrc
     ~/.notmuch-config: mail/notmuch-config
+    ~/.config/alot: mail/alot
 
     # dunst
     ~/.config/dunst/dunstrc:
