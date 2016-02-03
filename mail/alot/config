@@ -11,6 +11,9 @@ prefer_plaintext = 1
 [[gmail]]
 realname = Jan Khardix Staněk
 address = khardix@gmail.com
-# sendmail_command =
+sendmail_command = msmtp --account gmail --read-recipients
+sign_by_default = True
+encrypt_by_default = True
+signature_as_attachment = False
 # sent_box =
 # draft_box =
