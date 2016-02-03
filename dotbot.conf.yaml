@@ -30,6 +30,7 @@
     ~/.mbsyncrc: mail/mbsyncrc
     ~/.notmuch-config: mail/notmuch-config
     ~/.config/alot: mail/alot
+    ~/.msmtprc: mail/msmtprc
 
     # dunst
     ~/.config/dunst/dunstrc:
