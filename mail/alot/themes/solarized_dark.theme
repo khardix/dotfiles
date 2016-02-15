@@ -28,7 +28,7 @@
 16_green = 'dark green'
 
 # Use a slightly different mapping here to be able to use "bold" in 256c mode
-256_base03 = 'dark gray'
+256_base03 = 'black'
 256_base02 = 'black'
 256_base01 = 'light green'
 256_base00 = 'yellow'
