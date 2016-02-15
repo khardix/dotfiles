@@ -15,5 +15,11 @@ sendmail_command = msmtp --account gmail --read-recipients
 sign_by_default = True
 encrypt_by_default = True
 signature_as_attachment = False
-# sent_box =
-# draft_box =
+sent_box = maildir:///${HOME}/system/mail/gmail/sent
+draft_box = maildir:///${HOME}/system/mail/gmail/drafts
+
+[[[abook]]]
+type = shellcommand
+command = goobook query
+regexp = '^(?P<email>[^@]+@[^\t]+)\t+(?P<name>[^\t]+)'
+ignorecase = True

@@ -49,7 +49,7 @@ other_email=jstanek@redhat.com;
 #
 [new]
 tags=unread;inbox;
-ignore=archive;sent;
+#ignore=archive;sent;drafts;
 
 # Search configuration
 #

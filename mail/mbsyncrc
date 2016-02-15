@@ -27,6 +27,8 @@ Slave   :gmail-local:
 Patterns "INBOX"
 # To get the list of valid directories, uncomment this and run `mbsync -l`
 #Patterns *
+Sync All
+Expunge Both
 
 # Localized directories renamed to saner ones
 Channel sync-gmail-archive
@@ -37,7 +39,12 @@ Channel sync-gmail-sent
 Master  :gmail-remote:"[Gmail]/Odeslan&AOE- po&AWE-ta"
 Slave   :gmail-local:sent
 
+Channel sync-gmail-drafts
+Master  :gmail-remote:"[Gmail]/Koncepty"
+Slave   :gmail-local:drafts
+
 Group gmail
 Channel sync-gmail-default
 Channel sync-gmail-archive
 Channel sync-gmail-sent
+Channel sync-gmail-drafts
