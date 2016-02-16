@@ -6,6 +6,12 @@ search_threads_sort_order = newest_first
 editor_cmd = vim -f -c 'set filetype=mail' -c 'setlocal textwidth=80' +/^$ +noh
 prefer_plaintext = 1
 
+[bindings]
+
+[[thread]]
+j = move next
+k = move previous
+
 [accounts]
 
 [[gmail]]
