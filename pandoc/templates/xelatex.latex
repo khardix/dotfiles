@@ -1,0 +1,59 @@
+%!TeX program = XeLaTeX
+%!TeX encoding = UTF-8
+% Customized and simplyfied pandoc template for XeLaTeX
+
+\documentclass[fontsize=$if(fontsize)$$fontsize$$else$11pt$endif$,% default font size = 11pt
+               paper=$if(papersize)$$papersize$$else$A4$endif$,% default papersize = A4
+               DIV=15,pagesize=auto,
+               $for(classoption)$$classoption$$sep$,$endfor$% other options
+              ]{scrartcl}
+\usepackage{polyglossia,fontspec,xeCJK,unicode-math,xltxtra}
+
+% Language settings
+\setdefaultlanguage{$if(lang)$$polyglossia-lang$$else$czech$endif$}
+
+% Font settings
+\defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+\setmainfont{$if(mainfont)$$mainfont$$else$Linux Libertine O$endif$}
+\setsansfont{$if(sansfont)$$sansfont$$else$Linux Biolinum O$endif$}
+\setmonofont{$if(monofont)$$monofont$$else$Inconsolata$endif$}
+\setmathfont{$if(mathfont)$$mathfont$$else$XITS Math$endif$}
+\setCJKmainfont[Scale=MatchUppercase]{$if(CJKmainfont)$$CJKmainfont$$else$IPAMincho$endif$}
+
+% KOMAScript font settings - section headers etc.
+\setkomafont{disposition}{\rmfamily\scshape}
+
+% Code listings
+$if(listings)$\usepackage{listings}$endif$
+$if(lhs)$\lstnewenvironment{code}{\lstset{language=Haskell,basicstyle=\small\ttfamily}}{}$endif$
+$if(highlighting-macros)$$highlighting-macros$$endif$
+$if(verbatim-in-note)$
+\usepackage{fancyvrb}
+\VerbatimFootnotes % allows verbatim text in footnotes
+$endif$
+
+% Graphics
+$if(graphics)$
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+$endif$
+
+% Authoring
+$if(title)$\title{$title$}$endif$
+\author{$for(author)$$author.name$$if(author.affiliation)$\\$author.affiliation$$endif$$if(author.email)$\\\texttt{$author.email$}$endif$$sep$ \and $endfor$}
+\date{$if(date)$$date$$else$\today$endif$}
+
+\begin{document}
+
+$if(title)$\maketitle$endif$
+
+$body$
+
+\end{document}

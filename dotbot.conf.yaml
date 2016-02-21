@@ -76,3 +76,5 @@
     ~/.XCompose: XCompose
     # latexmk
     ~/.latexmkrc: latexmkrc
+    # pandoc
+    ~/.pandoc/templates: pandoc/templates
