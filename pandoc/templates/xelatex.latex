@@ -12,13 +12,15 @@
 % Language settings
 \setdefaultlanguage{$if(lang)$$polyglossia-lang$$else$czech$endif$}
 
+\PolyglossiaSetup{czech}{indentfirst=false}
+
 % Font settings
 \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
 \setmainfont{$if(mainfont)$$mainfont$$else$Linux Libertine O$endif$}
 \setsansfont{$if(sansfont)$$sansfont$$else$Linux Biolinum O$endif$}
 \setmonofont{$if(monofont)$$monofont$$else$Inconsolata$endif$}
 \setmathfont{$if(mathfont)$$mathfont$$else$XITS Math$endif$}
-\setCJKmainfont[Scale=MatchUppercase]{$if(CJKmainfont)$$CJKmainfont$$else$IPAMincho$endif$}
+\setCJKmainfont[Scale=MatchUppercase]{$if(CJKmainfont)$$CJKmainfont$$else$IPAexMincho$endif$}
 
 % KOMAScript font settings - section headers etc.
 \setkomafont{disposition}{\rmfamily\scshape}
