@@ -8,6 +8,8 @@
                $for(classoption)$$classoption$$sep$,$endfor$% other options
               ]{scrartcl}
 \usepackage{polyglossia,fontspec,xeCJK,unicode-math,xltxtra}
+\usepackage[dvipsnames,svgnames]{xcolor}
+\usepackage{hyperref}
 
 % Language settings
 \setdefaultlanguage{$if(lang)$$polyglossia-lang$$else$czech$endif$}
@@ -26,8 +28,20 @@
 \setkomafont{disposition}{\rmfamily\scshape}
 
 % Code listings
-$if(listings)$\usepackage{listings}$endif$
-$if(lhs)$\lstnewenvironment{code}{\lstset{language=Haskell,basicstyle=\small\ttfamily}}{}$endif$
+$if(listings)$
+\usepackage{listings}
+\lstdefinestyle{colorcode}{
+  basicstyle=\ttfamily,
+  identifierstyle=\color{blue},
+  keywordstyle=\color{green!50!black},
+  commentstyle=\color{lightgray},
+  stringstyle=\color{purple},
+  showstringspaces=false,
+  columns=fixed,
+  xleftmargin=\parindent,
+}
+$endif$
+$if(lhs)$\lstnewenvironment{code}{\lstset{language=Haskell,style=colorcode}}{}$endif$
 $if(highlighting-macros)$$highlighting-macros$$endif$
 $if(verbatim-in-note)$
 \usepackage{fancyvrb}
@@ -46,6 +60,9 @@ $if(graphics)$
 % using explicit options in \includegraphics[width, height, ...]{}
 \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
 $endif$
+
+% Custom macros
+\newcommand{\note}[1]{{\footnotesize #1}}
 
 % Authoring
 $if(title)$\title{$title$}$endif$
