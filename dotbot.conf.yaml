@@ -78,3 +78,6 @@
     ~/.latexmkrc: latexmkrc
     # pandoc
     ~/.pandoc/templates: pandoc/templates
+
+    # systemd
+    ~/.config/systemd/user/jupyter.service: systemd/jupyter.service
