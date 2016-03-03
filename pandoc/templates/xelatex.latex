@@ -61,6 +61,9 @@ $if(graphics)$
 \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
 $endif$
 
+% Tables
+$if(tables)$\usepackage{longtable,booktabs}$endif$
+
 % Custom macros
 \newcommand{\note}[1]{{\footnotesize #1}}
 
