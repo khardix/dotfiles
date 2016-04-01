@@ -28,7 +28,7 @@
 -- Draw tables with unicode symbols
 \pset linestyle unicode
 -- NULL value indicator
-\pset null ∅
+\pset null ␀
 
 -- Turn on echo again
 \unset QUIET
