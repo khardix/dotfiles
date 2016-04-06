@@ -67,6 +67,7 @@ include "%L"
 <Multi_key> <plus> <plus>                   : "∑" U2211  # not capital sigma
 <Multi_key> <asterisk> <asterisk>           : "∏" U220f  # not capital pi
 <Multi_key> <o> <bar>                       : "ϕ" U03d5  # not phi
+<Multi_key> <bar> <d>                       : "∂" U2202  # partial difference - not delta
 <Multi_key> <ampersand> <A>                 : "Α" U0391
 <Multi_key> <ampersand> <a>                 : "α" U03b1
 <Multi_key> <ampersand> <B>                 : "Β" U0392
