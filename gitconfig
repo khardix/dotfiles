@@ -12,3 +12,6 @@
 
 [diff]
   submodule = log
+
+[gpg]
+  program = gpg2
