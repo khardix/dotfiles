@@ -1,0 +1,162 @@
+# i3wm config file -- handcrafted
+
+# Basics
+
+## Modificator key
+set $mod Mod4
+## Terminal
+set $terminal st -e tmux
+## App launcher
+set $menu dmenu_run -sb '#BB0000'
+
+# Usage
+
+## Reload configuration
+bindsym $mod+Shift+c reload
+## Restart i3
+bindsym $mod+Shift+r restart
+## Start terminal
+bindsym $mod+Return exec $terminal
+## Start app launcher
+bindsym $mod+d exec $menu
+## Close focused window
+bindsym $mod+Shift+q kill
+
+## Exit mode
+set $exit_mode Exit: [L]ogout/[R]eboot/[P]oweroff
+mode "$exit_mode" {
+    bindsym l exit
+    bindsym r exec systemctl reboot
+    bindsym p exec systemctl poweroff
+
+    bindsym Escape mode "default"
+}
+bindsym $mod+Shift+e mode "$exit_mode"
+
+# Appearance
+
+## Font
+font pango:Inconsolata 10
+## Decorations
+### Class               border  backgr. text    indicator
+client.focused          #a60400 #8d2737 #d7f970 #bc008d
+client.unfocused        #000000 #8d8888 #dddddd #bc8888
+client.focused_inactive #000000 #8d8888 #d7f970 #bc8888
+client.urgent           #b7f200 #ff0700 #b7f200
+## Bar
+bar {
+    status_command i3status
+}
+
+## Speicific app appearance
+for_window [class="^st"] border none
+
+for_window [class="[Zz]athura"] border none
+
+# Layout
+
+## Focus
+bindsym $mod+h focus left
+bindsym $mod+l focus right
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+## Move focused
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+l move right
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+## Next split
+bindsym $mod+v split v
+bindsym $mod+g split h
+## Fullscreen
+bindsym $mod+f fullscreen
+## Container layouts
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+## Floating windows
+floating_minimum_size 80 x 60
+bindsym $mod+space floating toggle
+
+# Workspaces
+
+## Definitions
+set $chat   0: chat
+set $web    1: web
+set $code   2: code
+set $doc    3: doc
+set $media  4: media
+set $games  5: games
+set $virt   6: virt
+
+## Switch to workspace
+bindsym $mod+grave  workspace $chat
+bindsym $mod+1      workspace $web
+bindsym $mod+2      workspace $code
+bindsym $mod+3      workspace $doc
+bindsym $mod+4      workspace $media
+bindsym $mod+5      workspace $games
+bindsym $mod+6      workspace $virt
+bindsym $mod+7      workspace 7
+bindsym $mod+8      workspace 8
+bindsym $mod+9      workspace 9
+bindsym $mod+10     workspace 10
+
+bindsym $mod+Left   workspace prev
+bindsym $mod+Right  workspace next
+
+bindsym $mod+minus  scratchpad show
+
+## Move to workspace
+bindsym $mod+Shift+grave  move container to workspace $chat
+bindsym $mod+Shift+1      move container to workspace $web
+bindsym $mod+Shift+2      move container to workspace $code
+bindsym $mod+Shift+3      move container to workspace $doc
+bindsym $mod+Shift+4      move container to workspace $media
+bindsym $mod+Shift+5      move container to workspace $games
+bindsym $mod+Shift+6      move container to workspace $virt
+bindsym $mod+Shift+7      move container to workspace 7
+bindsym $mod+Shift+8      move container to workspace 8
+bindsym $mod+Shift+9      move container to workspace 9
+bindsym $mod+Shift+10     move container to workspace 10
+
+bindsym $mod+Shift+minus  move scratchpad
+
+## Move workspace
+bindsym $mod+Shift+Left   move workspace to output left
+bindsym $mod+Shift+Right  move workspace to output right
+
+## Assign workspaces to outputs
+set $main_monitor eDP-1
+set $left_monitor DP-3-2
+set $right_monitor DP-3-3
+
+workspace "$chat"   output $main_monitor
+workspace "$web"    output $left_monitor
+workspace "$code"   output $main_monitor
+workspace "$doc"    output $right_monitor
+workspace "$media"  output $main_monitor
+workspace "$games"  output $main_monitor
+workspace "$virt"   output $right_monitor
+
+## Assign apps to workspaces
+
+### Chat
+assign [class="chat"]       $chat
+### Web
+assign [class="^Firefox$"]  $web
+assign [class="^Thunderbird$"] $web
+### Doc
+assign [class="[Zz]athura"] $doc
+assign [title="LibreOffice"] $doc
+### Media
+assign [title="mpv"]        $media
+
+# Keybinds
+
+## Pause
+bindsym Pause       exec slock
+bindsym $mod+End    exec systemctl suspend & slock
+
+## IRC
+bindsym $mod+c      exec st -c 'chat' -e tmux new-session -A -s irc weechat
