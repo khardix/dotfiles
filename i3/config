@@ -23,11 +23,12 @@ bindsym $mod+d exec $menu
 bindsym $mod+Shift+q kill
 
 ## Exit mode
-set $exit_mode Exit: [L]ogout/[R]eboot/[P]oweroff
+set $exit_mode Exit: [S]uspend/[L]ogout/[R]eboot/[P]oweroff
 mode "$exit_mode" {
     bindsym l exit
     bindsym r exec systemctl reboot
     bindsym p exec systemctl poweroff
+    bindsym s exec mpc pause & slock & systemctl suspend & i3-msg mode "default"
 
     bindsym Escape mode "default"
 }
@@ -50,6 +51,7 @@ bar {
 
 ## Speicific app appearance
 for_window [class="^st"] border none
+for_window [class="terminal"] border none
 
 for_window [class="[Zz]athura"] border none
 
@@ -129,7 +131,7 @@ bindsym $mod+Shift+Right  move workspace to output right
 ## Assign workspaces to outputs
 set $main_monitor eDP-1
 set $left_monitor DP-3-2
-set $right_monitor DP-3-3
+set $right_monitor DP-3-1
 
 workspace "$chat"   output $main_monitor
 workspace "$web"    output $left_monitor
@@ -155,8 +157,13 @@ assign [title="mpv"]        $media
 # Keybinds
 
 ## Pause
-bindsym Pause       exec slock
-bindsym $mod+End    exec systemctl suspend & slock
+bindsym Pause       exec mpc pause & slock
+bindsym $mod+End    exec mpc pause & systemctl suspend & slock
 
 ## IRC
 bindsym $mod+c      exec st -c 'chat' -e tmux new-session -A -s irc weechat
+
+## Audio
+bindsym $mod+p      exec mpc toggle
+bindsym $mod+Prior  exec amixer sset Master unmute 5%+
+bindsym $mod+Next   exec amixer sset Master unmute 5%-
