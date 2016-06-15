@@ -47,6 +47,7 @@ client.urgent           #b7f200 #ff0700 #b7f200
 ## Bar
 bar {
     status_command i3status
+    position top
 }
 
 ## Speicific app appearance
