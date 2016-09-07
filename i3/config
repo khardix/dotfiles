@@ -103,7 +103,7 @@ bindsym $mod+6      workspace $virt
 bindsym $mod+7      workspace 7
 bindsym $mod+8      workspace 8
 bindsym $mod+9      workspace 9
-bindsym $mod+10     workspace 10
+bindsym $mod+0      workspace 10
 
 bindsym $mod+Left   workspace prev
 bindsym $mod+Right  workspace next
@@ -121,7 +121,7 @@ bindsym $mod+Shift+6      move container to workspace $virt
 bindsym $mod+Shift+7      move container to workspace 7
 bindsym $mod+Shift+8      move container to workspace 8
 bindsym $mod+Shift+9      move container to workspace 9
-bindsym $mod+Shift+10     move container to workspace 10
+bindsym $mod+Shift+0      move container to workspace 10
 
 bindsym $mod+Shift+minus  move scratchpad
 
@@ -166,5 +166,7 @@ bindsym $mod+c      exec st -c 'chat' -e tmux new-session -A -s irc weechat
 
 ## Audio
 bindsym $mod+p      exec mpc toggle
+bindsym $mod+bracketleft      exec mpc prev
+bindsym $mod+bracketright      exec mpc next
 bindsym $mod+Prior  exec amixer sset Master unmute 5%+
 bindsym $mod+Next   exec amixer sset Master unmute 5%-
