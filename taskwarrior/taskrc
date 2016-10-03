@@ -29,11 +29,11 @@ include /usr/share/doc/task/rc/dark-red-256.theme
 #include /usr/share/doc/task/rc/solarized-light-256.theme
 #include /usr/share/doc/task/rc/no-color.theme
 
-taskd.server=daidalos.khardix.me:53589
-taskd.key=~/.local/share/task/jan_stanek.key.pem
-taskd.certificate=~/.local/share/task/jan_stanek.cert.pem
-taskd.ca=~/.local/share/task/ca.cert.pem
-taskd.credentials=Personal/Jan Staněk/689f6db9-2bc0-4856-bf74-8f3aaddf9004
+taskd.server=daidalos.khardix.cz:53589
 
 taskd.trust=strict
 taskd.ciphers=NORMAL
+taskd.credentials=Personal\/Jan Staněk\/859c51e1-da18-42df-9ab2-b9bed283c1b3
+taskd.certificate=~/.local/share/task/client.cert.pem
+taskd.key=~/.local/share/task/client.key.pem
+taskd.ca=~/.local/share/task/ca.cert.pem
