@@ -48,8 +48,8 @@ other_email=jstanek@redhat.com;
 #		in the mail store.
 #
 [new]
-tags=unread;inbox;
-#ignore=archive;sent;drafts;
+tags=inbox;
+ignore=archive;sent;drafts;.secrets;.mbsyncstate;.uidvalidity
 
 # Search configuration
 #
