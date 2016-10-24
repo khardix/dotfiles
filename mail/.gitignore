@@ -1,3 +1,4 @@
-# Ignore generated alot configuration
+# Ignore generated configuration
 
 alot/config
+notmuch-config

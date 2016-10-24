@@ -23,7 +23,20 @@ def make_local(infile: str, outfile: str) -> None:
             print(expand_env_vars(line), file=outstream, end='')
 
 
-if __name__ == '__main__':
+def relative(path: str) -> str:
+    """Make path relative to script dir."""
+
     mydir = os.path.dirname(os.path.realpath(__file__))
 
-    make_local(mydir+'/alot/config.template', mydir+'/alot/config')
+    return os.path.join(mydir, path)
+
+
+if __name__ == '__main__':
+
+    templates = [
+        map(relative, ('alot/config.template', 'alot/config')),
+        map(relative, ('notmuch-config.template', 'notmuch-config'))
+    ]
+
+    for template, expanded in templates:
+        make_local(template, expanded)
