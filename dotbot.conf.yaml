@@ -81,3 +81,8 @@
 
     # systemd
     ~/.config/systemd/user/jupyter.service: systemd/jupyter.service
+    # fontconfig
+    ~/.config/fontconfig:
+        path: fonts
+        create: true
+        force: true
