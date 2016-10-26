@@ -9,6 +9,11 @@ set $terminal st -e tmux
 ## App launcher
 set $menu dmenu_run -sb '#BB0000'
 
+# Monitor variables
+set $main_monitor eDP-1
+set $left_monitor DP-3-2
+set $right_monitor DP-3-1
+
 # Usage
 
 ## Reload configuration
@@ -48,6 +53,7 @@ client.urgent           #b7f200 #ff0700 #b7f200
 bar {
     status_command i3status
     position top
+    tray_output $main_monitor
 }
 
 ## Speicific app appearance
@@ -131,10 +137,6 @@ bindsym $mod+Shift+Left   move workspace to output left
 bindsym $mod+Shift+Right  move workspace to output right
 
 ## Assign workspaces to outputs
-set $main_monitor eDP-1
-set $left_monitor DP-3-2
-set $right_monitor DP-3-1
-
 workspace "$chat"   output $main_monitor
 workspace "$web"    output $left_monitor
 workspace "$code"   output $main_monitor
