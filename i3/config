@@ -162,7 +162,7 @@ assign [title="mpv"]        $media
 # Keybinds
 
 ## Pause
-bindsym Pause       exec mpc pause & slock
+bindsym Pause       exec mpc pause & slock wchaway lock && wchaway unlock
 bindsym $mod+End    exec mpc pause & systemctl suspend & slock
 
 ## IRC
