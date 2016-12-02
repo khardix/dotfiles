@@ -45,15 +45,31 @@ bindsym $mod+Shift+e mode "$exit_mode"
 font pango:Inconsolata 10
 ## Decorations
 ### Class               border  backgr. text    indicator
-client.focused          #a60400 #8d2737 #d7f970 #bc008d
-client.unfocused        #000000 #8d8888 #dddddd #bc8888
-client.focused_inactive #000000 #8d8888 #d7f970 #bc8888
-client.urgent           #b7f200 #ff0700 #b7f200
+#client.focused          #a60400 #8d2737 #d7f970 #bc008d
+#client.unfocused        #000000 #8d8888 #dddddd #bc8888
+#client.focused_inactive #000000 #8d8888 #d7f970 #bc8888
+#client.urgent           #b7f200 #ff0700 #b7f200
+### Purple theme
+client.focused          #664477 #664477 #cccccc #e7d8b1
+client.focused_inactive #e7d8b1 #e7d8b1 #181715 #A074C4
+client.unfocused        #222133 #222133 #AAAAAA #A074C4
+client.urgent           #CE4045 #CE4045 #e7d8b1 #DCCD69
 ## Bar
 bar {
     status_command i3status
     position top
     tray_output $main_monitor
+
+# Purple theme
+    colors {
+        separator           #AAAAAA
+        background          #222133
+        statusline          #FFFFFF
+        focused_workspace   #664477 #664477 #cccccc
+        active_workspace    #DCCD69 #DCCD69 #181715
+        inactive_workspace  #222133 #222133 #AAAAAA
+        urgent_workspace    #CE4045 #CE4045 #FFFFFF
+    }
 }
 
 ## Speicific app appearance
