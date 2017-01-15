@@ -31,8 +31,8 @@ bindsym $mod+Shift+q kill
 set $exit_mode Exit: [S]uspend/[L]ogout/[R]eboot/[P]oweroff
 mode "$exit_mode" {
     bindsym l exit
-    bindsym r exec systemctl reboot
-    bindsym p exec systemctl poweroff
+    bindsym r exec sudo systemctl reboot
+    bindsym p exec sudo systemctl poweroff
     bindsym s exec mpc pause & slock & systemctl suspend & i3-msg mode "default"
 
     bindsym Escape mode "default"
