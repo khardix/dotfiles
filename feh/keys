@@ -1,0 +1,4 @@
+prev_img h Left
+next_img l Right space
+save_filelist
+toggle_fullscreen f

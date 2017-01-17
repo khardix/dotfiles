@@ -73,6 +73,8 @@
     ~/.config/systemd/user/connman-notify.service: connman/connman-notify.service
     # ranger
     ~/.config/ranger: ranger/
+    # feh
+    ~/.config/feh: feh/
 
     # XCompose
     ~/.XCompose: XCompose
