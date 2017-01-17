@@ -71,6 +71,8 @@
       create: true
     # connman
     ~/.config/systemd/user/connman-notify.service: connman/connman-notify.service
+    # ranger
+    ~/.config/ranger: ranger/
 
     # XCompose
     ~/.XCompose: XCompose
