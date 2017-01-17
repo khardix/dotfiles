@@ -42,7 +42,8 @@ bindsym $mod+Shift+e mode "$exit_mode"
 # Appearance
 
 ## Font
-font pango:Inconsolata 10
+set $main_font "pango:Inconsolata 10"
+font $main_font
 ## Decorations
 ### Class               border  backgr. text    indicator
 #client.focused          #a60400 #8d2737 #d7f970 #bc008d
@@ -190,3 +191,6 @@ bindsym $mod+bracketleft      exec mpc prev
 bindsym $mod+bracketright      exec mpc next
 bindsym $mod+Prior  exec amixer sset Master unmute 5%+
 bindsym $mod+Next   exec amixer sset Master unmute 5%-
+
+## File browser
+bindsym $mod+r      exec which ranger &>/dev/null && st -e ranger || i3-nagbar -f $main_font -m 'Missing ranger'
