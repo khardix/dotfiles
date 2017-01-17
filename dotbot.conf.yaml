@@ -86,3 +86,6 @@
         path: fonts
         create: true
         force: true
+
+    # PyPI
+    ~/.pypirc: pypirc

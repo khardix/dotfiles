@@ -1,0 +1,13 @@
+# Python package index settings
+
+[distutils]
+index-servers = pypi testpypi
+
+[pypi]
+repository = https://pypi.python.org/pypi
+username = khardix
+
+[testpypi]
+repository = https://testpypi.python.org/pypi
+username = khardix
+password = TestPassword16
