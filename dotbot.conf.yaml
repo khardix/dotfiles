@@ -78,6 +78,8 @@
 
     # XCompose
     ~/.XCompose: XCompose
+    # redshift
+    ~/.config/redshift.conf: redshift.conf
     # latexmk
     ~/.latexmkrc: latexmkrc
     # pandoc
