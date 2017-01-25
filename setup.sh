@@ -14,3 +14,9 @@ BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$BASEDIR"
 git submodule update --init --recursive "$DOTBOT_MODULE"
 "$BASEDIR/$DOTBOT_MODULE/$DOTBOT_BIN" -v -d "$BASEDIR" -c "$CONFIG" "${@}"
+
+# Dotbot for emails
+maildir="$BASEDIR/mail"
+if [ -d "${maildir}" -a -r "${maildir}/${CONFIG}" ]; then
+    "$BASEDIR/$DOTBOT_MODULE/$DOTBOT_BIN" -v -d "${maildir}" -c "${maildir}/$CONFIG" "${@}"
+fi
