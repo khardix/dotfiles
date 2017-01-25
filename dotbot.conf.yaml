@@ -5,7 +5,6 @@
     - [mkdir -p ~/.local/share/task, Creating taskwarrior data dir]
     - [git submodule update --init --recursive, Installing configuration submodules]
     - [git submodule foreach --recursive git checkout master, Switch configuration submodules to master branch]
-    - [python3 -m mail.make-local, Create localized mail configurations]
 
 - link:
     # VIM
@@ -28,10 +27,6 @@
       path: weechat
 
     # E-mail
-    ~/.mbsyncrc: mail/mbsyncrc
-    ~/.notmuch-config: mail/notmuch-config
-    ~/.config/alot: mail/alot
-    ~/.msmtprc: mail/msmtprc
 
     # dunst
     ~/.config/dunst/dunstrc:
