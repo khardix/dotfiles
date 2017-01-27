@@ -193,4 +193,4 @@ bindsym $mod+Prior  exec amixer sset Master unmute 5%+
 bindsym $mod+Next   exec amixer sset Master unmute 5%-
 
 ## File browser
-bindsym $mod+r      exec which ranger &>/dev/null && st -e ranger || i3-nagbar -f $main_font -m 'Missing ranger'
+bindsym $mod+r      exec which ranger &>/dev/null && st -e tmux new-session -A -s ranger ranger || i3-nagbar -f $main_font -m 'Missing ranger'
