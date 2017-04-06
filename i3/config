@@ -10,9 +10,9 @@ set $terminal st -e tmux
 set $menu dmenu_run -sb '#BB0000'
 
 # Monitor variables
-set $main_monitor eDP-1
-set $left_monitor DP-3-2
-set $right_monitor DP-3-1
+set $main_monitor eDP-1-1
+set $left_monitor DP-1-3-2
+set $right_monitor DP-1-3-1
 
 # Usage
 
