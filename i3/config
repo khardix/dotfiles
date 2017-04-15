@@ -42,7 +42,7 @@ bindsym $mod+Shift+e mode "$exit_mode"
 # Appearance
 
 ## Font
-set $main_font "pango:Inconsolata 10"
+set $main_font "pango:Inconsolata 14"
 font $main_font
 ## Decorations
 ### Class               border  backgr. text    indicator
