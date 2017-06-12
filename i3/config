@@ -155,13 +155,13 @@ bindsym $mod+Shift+Right  move workspace to output right
 
 ## Assign workspaces to outputs
 workspace "$chat"   output $main_monitor
-workspace "$web"    output $left_monitor
+workspace "$web"    output $right_monitor
 workspace "$code"   output $main_monitor
-workspace "$mail"   output $right_monitor
+workspace "$mail"   output $left_monitor
 workspace "$media"  output $main_monitor
 workspace "$games"  output $main_monitor
-workspace "$virt"   output $right_monitor
-workspace "$doc"    output $right_monitor
+workspace "$virt"   output $left_monitor
+workspace "$doc"    output $left_monitor
 
 ## Assign apps to workspaces
 
