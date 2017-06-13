@@ -11,4 +11,4 @@ sub-border-color='#3B0000'
 cache-secs=10
 cache-pause=yes # Video buffering
 
-video-unscaled=yes
+video-unscaled=downscale-big
