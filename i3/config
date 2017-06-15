@@ -161,7 +161,7 @@ workspace "$mail"   output $left_monitor
 workspace "$media"  output $main_monitor
 workspace "$games"  output $main_monitor
 workspace "$virt"   output $left_monitor
-workspace "$doc"    output $left_monitor
+workspace "$doc"    output $right_monitor
 
 ## Assign apps to workspaces
 
