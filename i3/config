@@ -76,6 +76,7 @@ bar {
 ## Speicific app appearance
 for_window [class="^st"] border none
 for_window [class="terminal"] border none
+for_window [class="chat"] border none
 
 for_window [class="[Zz]athura"] border none
 
