@@ -3,20 +3,18 @@
 # Exit after failed command
 set -e
 
-# Dotbot configuration
-CONFIG="dotbot.conf.yaml"
-DOTBOT_MODULE="dotbot"
-DOTBOT_BIN="bin/dotbot"
+# Minimal required environment - initialized tools submodules
+script_dir=$(dirname "${BASH_SOURCE[0]}")
+cd "$script_dir" && git submodule update --init --recursive -- _tools
 
-BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# Run dotbot for all provided configuration files
+dotbot=_tools/dotbot/bin/dotbot
 
-# Run dotbot
-cd "$BASEDIR"
-git submodule update --init --recursive "$DOTBOT_MODULE"
-"$BASEDIR/$DOTBOT_MODULE/$DOTBOT_BIN" -v -d "$BASEDIR" -c "$CONFIG" "${@}"
-
-# Dotbot for emails
-maildir="$BASEDIR/mail"
-if [ -d "${maildir}" -a -r "${maildir}/${CONFIG}" ]; then
-    "$BASEDIR/$DOTBOT_MODULE/$DOTBOT_BIN" -v -d "${maildir}" -c "${maildir}/$CONFIG" "${@}"
-fi
+# BFS search for config files
+find . -type f -name 'dotbot.conf.yaml' -printf '%d\t%P\n' \
+    | sort -nk1 \
+    | cut -f2- \
+    | while read -r config
+do
+    ${dotbot} -d "$(dirname "$config")" -c "$config" --verbose
+done

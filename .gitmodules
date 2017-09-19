@@ -16,3 +16,4 @@
 [submodule "_tools/dotbot"]
 	path = _tools/dotbot
 	url = https://github.com/anishathalye/dotbot
+    ignore = dirty
