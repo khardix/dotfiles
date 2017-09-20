@@ -16,5 +16,6 @@ find . -type f -name 'dotbot.conf.yaml' -printf '%d\t%P\n' \
     | cut -f2- \
     | while read -r config
 do
+    echo "[$config]"
     ${dotbot} -d "$(dirname "$config")" -c "$config" --verbose
 done
