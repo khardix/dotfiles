@@ -1,10 +1,19 @@
-- clean: ['~', '~/.config']
+- defaults:
+    link:
+      create: True  # Create parent directories if necessary
+      relink: True  # Re-point broken links to the dotfiles dir
+
+# Remove broken symlinks from the specified directories
+- clean:
+  - '~/.config'
+  - '~'
 
 - shell:
-    - [mkdir -p ~/.config, Creating default config directory]
-    - [mkdir -p ~/.local/share/task, Creating taskwarrior data dir]
-    - [git submodule update --init --recursive, Installing configuration submodules]
-    - [git submodule foreach --recursive git checkout master, Switch configuration submodules to master branch]
+  - description: Update configuration sub-modules to latest master commit.
+    stderr: True
+    command: >
+      git submodule status | cut -d' ' -f3 | grep -v _tools
+      | xargs git submodule update --init --remote --recursive
 
 - link:
     # VIM
