@@ -12,92 +12,48 @@
   - description: Update configuration sub-modules to latest master commit.
     stderr: True
     command: >
-      git submodule status | cut -d' ' -f3 | grep -v _tools
+      git submodule --quiet foreach 'echo $path' | grep -v _tools/
       | xargs git submodule update --init --remote --recursive
 
 - link:
-    # VIM
-    ~/.vim: vim/
-    ~/.vimrc: vim/vimrc
-    ~/.gvimrc: vim/gvimrc
-    # ZSH
-    ~/.zshenv: zsh/01-zshenv
-    ~/.zprofile: zsh/02-zprofile
-    ~/.zshrc:
-      force: true
-      path: zsh/03-zshrc
-    ~/.zlogin: zsh/04-zlogin
-    ~/.zlogout: zsh/05-zlogout
-    # Newsbeuter
-    ~/.config/newsbeuter: newsbeuter/
-    # Weechat
-    ~/.weechat:
-      force: true
-      path: weechat
+    ~/.config/dunst/dunstrc: dunstrc
 
-    # E-mail
+    ~/.config/git/config: gitconfig
 
-    # dunst
-    ~/.config/dunst/dunstrc:
-      create: true
-      path: dunstrc
-    # git
-    ~/.config/git/config:
-      create: true
-      path: gitconfig
-    # MPD
     ~/.config/systemd/user/mpd.socket:
       path: mpd/mpd.socket
-      create: true
       force: true
-    ~/.mpdscribble/mpdscribble.conf:
-      create: true
-      path: mpdscribble/mpdscribble.conf
-    # MPV
+    ~/.mpdscribble/mpdscribble.conf: mpdscribble/mpdscribble.conf
+
     ~/.config/mpv/config:
-      create: true
       force: true
       path: mpv/config
-    # PostgreSQL CLI
+
     ~/.psqlrc: psqlrc
-    # taskwarrior
     ~/.taskrc:
       path: taskwarrior/taskrc
       force: true
-    # tmux
     ~/.tmux.conf:
       path: tmux/tmux.conf
       force: true
-    # udiskie
+
     ~/.config/udiskie: udiskie/
-    ~/.config/systemd/user/udiskie.service:
-      path: udiskie/udiskie.service
-      create: true
-    # connman
-    ~/.config/systemd/user/connman-notify.service: connman/connman-notify.service
-    # ranger
+    ~/.config/systemd/user/udiskie.service: udiskie/udiskie.service
+
     ~/.config/ranger: ranger/
-    # feh
     ~/.config/feh: feh/
 
-    # XCompose
     ~/.XCompose: XCompose
-    # redshift
     ~/.config/redshift.conf: redshift.conf
-    # latexmk
+
     ~/.latexmkrc: latexmkrc
-    # pandoc
     ~/.pandoc/templates: pandoc/templates
 
-    # systemd
     ~/.config/systemd/user/jupyter.service: systemd/jupyter.service
-    # fontconfig
+
     ~/.config/fontconfig:
         path: fonts
-        create: true
         force: true
 
-    # PyPI
     ~/.pypirc: pypirc
-    # flake8
     ~/.config/flake8: flake8
