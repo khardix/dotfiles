@@ -3,9 +3,12 @@
 # Exit after failed command
 set -e
 
-# Minimal required environment - initialized tools submodules
 script_dir=$(dirname "${BASH_SOURCE[0]}")
-cd "$script_dir" && git submodule update --init --recursive -- _tools
+
+# Minimal required environment
+cd "$script_dir"
+git pull --ff-only  # ensure latest published state
+git submodule update --init --recursive -- _tools  # Ensure tools are available
 
 # Run dotbot for all provided configuration files
 dotbot=_tools/dotbot/bin/dotbot
