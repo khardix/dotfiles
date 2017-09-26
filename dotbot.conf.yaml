@@ -13,7 +13,7 @@
     stderr: True
     command: >
       git submodule --quiet foreach 'echo $path' | grep -v _tools/
-      | xargs git submodule update --init --remote --recursive
+      | xargs git submodule update --init --remote --merge --recursive
 
 - link:
     ~/.config/dunst/dunstrc: dunstrc
