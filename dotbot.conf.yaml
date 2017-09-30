@@ -16,6 +16,9 @@
       | xargs git submodule update --init --remote --merge --recursive
 
 - link:
+    ~/.config/i3:
+    ~/.config/i3status:
+
     ~/.config/dunst/dunstrc: dunstrc
 
     ~/.config/git/config: gitconfig
