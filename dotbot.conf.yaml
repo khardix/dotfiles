@@ -23,9 +23,6 @@
 
     ~/.config/git/config: gitconfig
 
-    ~/.config/systemd/user/mpd.socket:
-      path: mpd/mpd.socket
-      force: true
     ~/.mpdscribble/mpdscribble.conf: mpdscribble/mpdscribble.conf
 
     ~/.config/mpv/config:

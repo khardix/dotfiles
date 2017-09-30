@@ -1,0 +1,17 @@
+- defaults:
+    link:
+      create: True
+      relink: True
+      force: True
+
+- clean:
+  - '~/.config/mpd'
+  - '~/.mpd'
+
+- shell:
+  - description: 'Ensure MPD data directories'
+    command: mkdir -p ~/.local/share/mpd/playlists
+
+- link:
+    ~/.config/mpd/mpd.conf:
+    ~/.config/systemd/user/mpd.socket:
