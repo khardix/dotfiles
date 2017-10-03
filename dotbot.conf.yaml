@@ -57,3 +57,5 @@
 
     ~/.pypirc: pypirc
     ~/.config/flake8: flake8
+
+    ~/.clang-format:
