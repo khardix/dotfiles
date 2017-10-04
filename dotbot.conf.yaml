@@ -11,7 +11,7 @@
 - shell:
   - description: Update configuration sub-modules to latest master commit.
     stderr: True
-    command: >
+    command: >-
       git submodule --quiet foreach 'echo $path' | grep -v _tools/
       | xargs git submodule update --init --remote --merge --recursive
 
