@@ -59,7 +59,7 @@ client.urgent           #CE4045 #CE4045 #e7d8b1 #DCCD69
 bar {
     status_command i3status
     position top
-    tray_output $main_monitor
+    tray_output primary
 
 # Purple theme
     colors {
