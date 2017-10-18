@@ -16,6 +16,7 @@ function dotbot
     local -r bin=_tools/dotbot/bin/dotbot
     local -r config=${1:-dotbot.conf.yaml}
 
+    echo
     echo "[$config]"
     ${bin} -d "$(dirname "$config")" -c "$config" --verbose
 }
