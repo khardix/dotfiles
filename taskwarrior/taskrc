@@ -33,7 +33,7 @@ taskd.server=daidalos.khardix.cz:53589
 
 taskd.trust=strict
 taskd.ciphers=NORMAL
-taskd.credentials=Personal\/Jan Staněk\/859c51e1-da18-42df-9ab2-b9bed283c1b3
+taskd.credentials=Public\/Jan Staněk\/ccc37f1a-aabe-43ae-a6c3-171755e80fe3
 taskd.certificate=~/.local/share/task/client.cert.pem
 taskd.key=~/.local/share/task/client.key.pem
 taskd.ca=~/.local/share/task/ca.cert.pem
