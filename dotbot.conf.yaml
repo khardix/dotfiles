@@ -23,6 +23,8 @@
 
     ~/.config/git/config: gitconfig
 
+    ~/.config/zathura/zathurarc:
+
     ~/.mpdscribble/mpdscribble.conf: mpdscribble/mpdscribble.conf
 
     ~/.config/mpv/config:
