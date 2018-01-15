@@ -1,12 +1,12 @@
 [global]
-    follow = keyboard  # Follow keyboard focus
-    geometry = "500x3-15+15"  # Width x max_messages ± offset
+    follow = keyboard
+    geometry = 500x3-0-0
     indicate_hidden = true
     separator_height = 1
     padding = 2
     frame_width = 2
     frame_color = "#664477"
-    sort = true  # Higher urgency before lower
+    sort = true
     idle_threshold = "5m"
     font = "Inconsolata 11"
     markup = full
@@ -17,7 +17,7 @@
     icon_position = "right"
     dmenu = /usr/bin/dmenu -p dunst:
     browser = /usr/bin/firefox -new-tab
-    shrink = true
+    shrink = false
 
 [shortcut]
 
