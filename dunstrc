@@ -1,6 +1,6 @@
 [global]
     follow = keyboard
-    geometry = 500x3-0-0
+    geometry = 500x3-0+25
     indicate_hidden = true
     separator_height = 1
     padding = 2
