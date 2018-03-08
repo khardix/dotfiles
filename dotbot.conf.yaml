@@ -62,3 +62,5 @@
     ~/.config/flake8: flake8
 
     ~/.clang-format:
+
+    ~/.gnupg/gpg.conf:
