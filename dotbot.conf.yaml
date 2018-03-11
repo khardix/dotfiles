@@ -32,9 +32,12 @@
       path: mpv/config
 
     ~/.psqlrc: psqlrc
+
     ~/.taskrc:
       path: taskwarrior/taskrc
       force: true
+    ~/.config/task/dark-red-256.theme: taskwarrior/dark-red-256.theme
+
     ~/.tmux.conf:
       path: tmux/tmux.conf
       force: true
