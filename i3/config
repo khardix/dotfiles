@@ -34,6 +34,7 @@ mode "$exit_mode" {
     bindsym r exec sudo systemctl reboot
     bindsym p exec sudo systemctl poweroff
     bindsym s exec mpc pause & slock & systemctl suspend & i3-msg mode "default"
+    bindsym w exec sudo grub-reboot "Microsoft Windows 10 Home Edition" && sudo systemctl reboot
 
     bindsym Escape mode "default"
 }
