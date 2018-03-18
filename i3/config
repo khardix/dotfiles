@@ -22,8 +22,9 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 ## Start terminal
 bindsym $mod+Return exec $terminal
-## Start app launcher
-bindsym $mod+d exec $menu
+## Start launchers
+bindsym $mod+d exec dmenu_run -sb '#00BB00'
+bindsym $mod+b exec passmenu  -sb '#BB0000'
 ## Close focused window
 bindsym $mod+Shift+q kill
 
