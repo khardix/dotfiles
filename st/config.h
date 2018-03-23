@@ -6,8 +6,9 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char font[] = "Inconsolata:pixelsize=15:antialias=true:autohint=false";
-static int  borderpx = 2;
+static char font[]
+    = "Inconsolata:pixelsize=16:dpi=96:antialias=true:autohint=false";
+static int borderpx = 2;
 
 /*
  * What program is execed by st depends of these precedence rules:
