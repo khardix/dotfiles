@@ -67,3 +67,6 @@
     ~/.clang-format:
 
     ~/.gnupg/gpg.conf:
+    ~/.gnupg/gpg-agent.conf:
+        path: gpg-agent.conf
+        force: True
