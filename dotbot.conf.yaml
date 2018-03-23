@@ -49,7 +49,9 @@
     ~/.config/ranger: ranger/
     ~/.config/feh: feh/
 
-    ~/.XCompose: XCompose
+    ~/.xinitrc: X11/xinitrc
+    ~/.XCompose: X11/XCompose
+    ~/.Xresources: X11/Xresources
     ~/.config/redshift.conf: redshift.conf
 
     ~/.latexmkrc: latexmkrc
