@@ -1,37 +1,37 @@
 ! ===== Color theme (Symphonic with tweaks) =====
 ! special
-*.foreground:   #ffffff
-*.background:   #000000
-*.cursorColor:  #ffffff
+*foreground:   #ffffff
+*background:   #000000
+*cursorColor:  #ffffff
 
 ! black
-*.color0:       #000000
-*.color8:       #595959
+*color0:       #000000
+*color8:       #595959
 
 ! red
-*.color1:       #dc322f
-*.color9:       #dc322f
+*color1:       #dc322f
+*color9:       #dc322f
 
 ! green
-*.color2:       #56db3a
-*.color10:      #56db3a
+*color2:       #56db3a
+*color10:      #56db3a
 
 ! yellow
-*.color3:       #ffd500
-*.color11:      #ffd300
+*color3:       #ffd500
+*color11:      #ffd300
 
 ! blue
-*.color4:       #0084d4
-*.color12:      #0084d4
+*color4:       #0084d4
+*color12:      #0084d4
 
 ! magenta
-*.color5:       #8c19a6
-*.color13:      #8a1fa5
+*color5:       #8c19a6
+*color13:      #8a1fa5
 
 ! cyan
-*.color6:       #ccccff
-*.color14:      #ccccff
+*color6:       #ccccff
+*color14:      #ccccff
 
 ! white
-*.color7:       #ffffff
-*.color15:      #ffffff
+*color7:       #ffffff
+*color15:      #ffffff
