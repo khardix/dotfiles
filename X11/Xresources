@@ -1,37 +1,53 @@
 ! ===== Color theme (Symphonic with tweaks) =====
 ! special
-*foreground:   #ffffff
-*background:   #000000
-*cursorColor:  #ffffff
+*foreground:    #ffffff
+*background:    #000000
+*cursorColor:   #ffffff
 
 ! black
-*color0:       #000000
-*color8:       #595959
+*color0:        #000000
+*color8:        #595959
 
 ! red
-*color1:       #dc322f
-*color9:       #dc322f
+*color1:        #dc322f
+*color9:        #dc322f
 
 ! green
-*color2:       #56db3a
-*color10:      #56db3a
+*color2:        #56db3a
+*color10:       #56db3a
 
 ! yellow
-*color3:       #ffd500
-*color11:      #ffd300
+*color3:        #ffd500
+*color11:       #ffd300
 
 ! blue
-*color4:       #0084d4
-*color12:      #0084d4
+*color4:        #0084d4
+*color12:       #0084d4
 
 ! magenta
-*color5:       #8c19a6
-*color13:      #8a1fa5
+*color5:        #8c19a6
+*color13:       #8a1fa5
 
 ! cyan
-*color6:       #ccccff
-*color14:      #ccccff
+*color6:        #ccccff
+*color14:       #ccccff
 
 ! white
-*color7:       #ffffff
-*color15:      #ffffff
+*color7:        #ffffff
+*color15:       #ffffff
+
+! ===== i3 color specifics =====
+! red
+i3wm*color1:    #992e2e
+! green
+i3wm*color2:    #4c3226
+! yellow
+i3wm*color3:    #a67c53
+! blue
+i3wm*color4:    #4c7399
+! purple
+i3wm*color5:    #bf9986
+! orange
+i3wm*color6:    #d97742
+! gray
+i3wm*color8:    #34302d
