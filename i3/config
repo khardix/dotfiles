@@ -142,18 +142,4 @@ for_window  [class="^st|terminal|chat"]     border  none
 for_window  [class="[Zz]athura"]            border  1px
 
 # Bar
-bar {
-    position        top
-    status_command  i3status
-    tray_output     primary
-
-    colors {
-        separator           $gray
-        background          $bg
-        statusline          $fg
-        focused_workspace   $green  $green  $fg
-        active_workspace    $bg     $bg     $yellow
-        inactive_workspace  $bg     $bg     $fg
-        urgent_workspace    $red    $red    $fg
-    }
-}
+exec_always --no-startup-id $HOME/.config/polybar/launch.zsh

@@ -37,6 +37,8 @@
 *color15:       #ffffff
 
 ! ===== i3 color specifics =====
+! gray
+i3wm*color0:    #34302d
 ! red
 i3wm*color1:    #992e2e
 ! green
@@ -49,5 +51,3 @@ i3wm*color4:    #4c7399
 i3wm*color5:    #bf9986
 ! orange
 i3wm*color6:    #d97742
-! gray
-i3wm*color8:    #34302d

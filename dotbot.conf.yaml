@@ -17,7 +17,7 @@
 
 - link:
     ~/.config/i3:
-    ~/.config/i3status:
+    ~/.config/polybar:
 
     ~/.config/dunst/dunstrc: dunstrc
 
