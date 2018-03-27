@@ -109,7 +109,7 @@ label-offline-foreground    = ${colors.gray-bg}
 ; ethernet connection
 [module/wired]
 type                        = internal/network
-interface                   = ${xrdb:network.ethernet:enp0s31f6}
+interface                   = ${env:ETH}
 
 format-connected            =  <label-connected>
 label-connected             = %local_ip%
@@ -121,7 +121,7 @@ format-disconnected-foreground = ${colors.red-fg}
 ; wi-fi connection
 [module/wireless]
 type                        = internal/network
-interface                   = ${xrdb:network.wireless:wlp3s0}
+interface                   = ${env:WLN}
 
 format-connected            =  <label-connected>
 label-connected             = %local_ip%@%essid%
