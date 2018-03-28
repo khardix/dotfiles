@@ -146,7 +146,7 @@ ramp-capacity-0             = 
 ramp-capacity-1-foreground  = ${colors.red-fg}
 ramp-capacity-0-foreground  = ${self.ramp-capacity-1-foreground}
 
-format-charging             =  <label-charging>
+format-charging             = <ramp-capacity> <label-charging>
 label-charging              = %percentage%%
 format-discharging          = <ramp-capacity> <label-discharging>
 label-discharging           = ${self.label-charging}
@@ -155,6 +155,7 @@ format-full                 = <ramp-capacity>
 format-charging-foreground  = ${colors.blue-fg}
 label-charging-foreground   = ${colors.foreground}
 format-discharging-foreground = ${colors.yellow-fg}
+label-discharging-foreground = ${colors.foreground}
 
 ; current local date and time
 [module/datetime]
