@@ -100,8 +100,8 @@ host                        = localhost
 port                        = 6600
 format                      = <label-song>
 
-label-song                  = %artist%  %title%
-label-offline               = 
+label-song                  = %artist%: %title%
+label-offline               =
 
 label-song-foreground       = ${colors.gray-fg}
 label-offline-foreground    = ${colors.gray-bg}
