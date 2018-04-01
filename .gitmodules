@@ -7,9 +7,6 @@
 [submodule "newsbeuter"]
 	path = newsbeuter
 	url = https://github.com/khardix/newsbeuter-config.git
-[submodule "weechat"]
-	path = weechat
-	url = https://github.com/khardix/weechat-config
 [submodule "mail"]
 	path = mail
 	url = https://github.com/khardix/mail-config
