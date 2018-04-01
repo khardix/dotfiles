@@ -32,7 +32,7 @@ inherit         = bar/base
 monitor         = ${env:PRIMARY_MONITOR:eDP-1-1}
 tray-position   = right
 modules-center  = mpd
-modules-right   = wired wireless battery datetime
+modules-right   = wired wireless battery volume datetime
 
 ; multi-monitor: center bar
 [bar/center]
@@ -40,7 +40,7 @@ inherit         = bar/base
 monitor         = ${xrdb:i3wm.monitor.center:eDP-1-1}
 tray-position   = right
 modules-center  = mpd
-modules-right   = wired wireless battery datetime
+modules-right   = wired wireless battery volume datetime
 
 ; multi-monitor: left bar
 [bar/left]
@@ -156,6 +156,22 @@ format-charging-foreground  = ${colors.blue-fg}
 label-charging-foreground   = ${colors.foreground}
 format-discharging-foreground = ${colors.yellow-fg}
 label-discharging-foreground = ${colors.foreground}
+
+; volume status and current active output
+[module/volume]
+type                        = internal/volume
+click-left                  = amixer sset Master toggle
+
+format-volume               = <ramp-volume> <label-volume>
+label-volume                = %percentage%%
+format-muted                = 
+format-muted-foreground     = ${colors.yellow-fg}
+
+ramp-volume-0               = 
+ramp-volume-1               = 
+ramp-volume-2               = 
+ramp-volume-3               = 
+ramp-headphones-0           = 
 
 ; current local date and time
 [module/datetime]
