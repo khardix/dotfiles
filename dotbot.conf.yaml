@@ -72,3 +72,5 @@
     ~/.gnupg/gpg-agent.conf:
         path: gpg-agent.conf
         force: True
+
+    ~/.weechat/.weerc: weerc

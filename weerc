@@ -1,0 +1,36 @@
+#
+# WeeChat 2.1 (compiled on Mar 18 2018 22:29:56)
+#
+# Use /autoconf load or cat this file to the FIFO pipe.
+#
+# For more info, see https://weechat.org/scripts/source/autoconf.py.html
+#
+
+*/set weechat.look.color_nick_offline on
+*/set weechat.look.prefix_join "→"
+*/set weechat.look.prefix_quit "←"
+*/set weechat.look.prefix_suffix "│"
+*/set weechat.look.read_marker_string "┈"
+*/set weechat.color.chat_nick_colors "red,yellow,green,lightblue,default,lightgreen,blue"
+*/set weechat.color.chat_prefix_suffix darkgray
+*/set weechat.color.chat_time darkgray
+*/set weechat.color.chat_time_delimiters default
+*/set weechat.color.emphasized_bg default
+*/set weechat.color.separator darkgray
+*/set weechat.completion.nick_add_space off
+*/set weechat.completion.partial_completion_alert off
+*/set weechat.bar.buflist.items "buflist"
+*/set weechat.bar.fset.items "fset"
+*/set buflist.format.buffer_current "${color:,88}${format_buffer}"
+*/set irc.look.color_nicks_in_nicklist on
+*/set irc.look.server_buffer independent
+*/set irc.color.input_nick lightgreen
+*/set irc.color.message_join lightcyan
+*/set irc.color.message_quit darkgray
+*/set irc.server_default.nicks "khardix,jstanek"
+*/set irc.server_default.realname "Jan Staněk"
+*/set irc.server_default.username "khardix"
+*/set script.color.status_autoloaded yellow
+*/set script.color.status_popular default
+*/set fset.look.use_color_value on
+*/set fset.color.line_selected_bg1 88
