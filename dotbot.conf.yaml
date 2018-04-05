@@ -73,4 +73,6 @@
         path: gpg-agent.conf
         force: True
 
-    ~/.weechat/.weerc: weerc
+    ~/.weechat/buflist.conf: weechat/buflist.conf
+    ~/.weechat/fset.conf:    weechat/fset.conf
+    ~/.weechat/weechat.conf: weechat/weechat.conf
