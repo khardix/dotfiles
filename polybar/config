@@ -22,6 +22,7 @@ foreground      = ${colors.foreground}
 font-0          = "Fantasque Sans Mono:pixelsize=12:antialiasing=true;1"
 font-1          = "Inconsolata:pixelsize=12:autohint=false;0"
 font-2          = "FontAwesome:pixelsize=12;2"
+font-3          = "Symbola:pixelsize=12;1"
 locale          = cs_CZ.UTF-8
 separator       = %{F#34302d}|%{F-}
 modules-left    = i3
@@ -99,12 +100,11 @@ type                        = internal/mpd
 host                        = localhost
 port                        = 6600
 format                      = <label-song>
+format-playing-foreground   = ${colors.green-fg}
+format-paused-foreground    = ${colors.gray-fg}
 
-label-song                  = %artist%: %title%
-label-offline               =
-
-label-song-foreground       = ${colors.gray-fg}
-label-offline-foreground    = ${colors.gray-bg}
+label-song                  = %artist% 🎜 %title%
+label-offline               = 🎜
 
 ; ethernet connection
 [module/wired]
