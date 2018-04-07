@@ -44,7 +44,7 @@ bindsym     $mod+Return         exec    st -e tmux
 bindsym     $mod+d              exec    dmenu_run -sb '$green'
 bindsym     $mod+s              exec    passmenu  -sb '$red'
 bindsym     $mod+c              exec    st -c chat -e tmux new-session -As irc weechat
-bindsym     $mod+r              exec    st -e tmux new-session -As ranger ranger
+bindsym     $mod+r              exec    st -e ranger
 # => Media
 bindsym     --release Pause     exec    mpc pause & slock wchaway lock && wchaway unlock
 bindsym     $mod+p              exec    mpc toggle
