@@ -50,6 +50,7 @@
     ~/.config/feh: feh/
 
     ~/.xinitrc: X11/xinitrc
+    ~/.xsession: X11/xinitrc
     ~/.XCompose: X11/XCompose
     ~/.Xresources: X11/Xresources
     ~/.config/redshift.conf: redshift.conf
