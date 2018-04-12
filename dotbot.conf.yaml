@@ -25,6 +25,7 @@
 
     ~/.config/zathura/zathurarc:
 
+    ~/.ncmpcpp/config: ncmpcpp/config
     ~/.mpdscribble/mpdscribble.conf: mpdscribble/mpdscribble.conf
 
     ~/.config/mpv/config:

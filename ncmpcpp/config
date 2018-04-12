@@ -11,6 +11,55 @@ visualizer_fifo_path    = ~/.local/share/mpd/feed
 visualizer_output_name  = Visualizer feed
 visualizer_in_stereo    = yes
 
-visualizer_type         = wave_filled
-visualizer_look         = *#
-visualizer_color        = green, yellow, red
+visualizer_type         = spectrum
+visualizer_color        = 41, 83, 119, 155, 185, 215, 209, 203, 197, 161
+
+                                   # Colors #
+empty_tag_color         = black:b
+main_window_color       = red_black
+header_window_color     = 228_current
+state_line_color        = white
+state_flags_color       = green:b
+color1                  = white
+color2                  = red
+progressbar_color       = black:b
+progressbar_elapsed_color = red:b
+player_state_color      = black:b
+
+                               # Look and Feel #
+user_interface          = alternative
+media_library_primary_tag = album_artist
+playlist_display_mode   = columns
+search_engine_display_mode = columns
+playlist_editor_display_mode = columns
+
+message_delay_time      = 1
+playlist_disable_highlight_delay = 0
+show_duplicate_tags     = no
+autocenter_mode         = yes
+centered_cursor         = yes
+progressbar_look        = ━╾─
+default_place_to_search_in = playlist
+cyclic_scrolling        = yes
+follow_now_playing_lyrics = yes
+fetch_lyrics_for_current_song_in_background = yes
+ask_before_clearing_playlists = no
+clock_display_seconds   = yes
+ignore_leading_the      = yes
+mouse_support           = no
+external_editor         = vim
+use_console_editor      = yes
+
+song_list_format        = $8{$6[%l] }{$8%t$0$R$4%a}|{$8%f$R}$0
+song_columns_list_format= (20)[4]{a} (6f)[green]{NE} (50)[white]{t|f:Title} (20)[cyan]{b} (7f)[magenta]{lr}
+song_status_format      = {[$b$2%t$9$/b]─<$4%a$9>─[$7%b (%y)$9]}|{$8%f$9}
+song_library_format     = $8{{$3[%2n] }$8%t}|{$8%f}$R{$6[%l]}$0
+alternative_header_first_line_format    = $b$1$aqqu$/a$9 $2{%t}|{%f}$9 $1$atqq$/a$9$/b
+alternative_header_second_line_format   = {{$4$b%a$/b$9}{ - $7%b (%y)$9}}|{%D}
+
+current_item_prefix = $u
+current_item_suffix = $/u
+current_item_inactive_column_prefix = $b
+current_item_inactive_column_suffix = $/b
+selected_item_prefix    = $r
+selected_item_suffix    = $/r
