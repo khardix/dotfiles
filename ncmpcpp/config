@@ -1,0 +1,16 @@
+################################################################################
+                                   # ncmpcpp #
+################################################################################
+
+                             # Connection to MPD #
+mpd_music_dir   = ~/music           # needed for tag and file operations
+
+                                 # Visualizer #
+# Needs to be in sync with MPD!
+visualizer_fifo_path    = ~/.local/share/mpd/feed
+visualizer_output_name  = Visualizer feed
+visualizer_in_stereo    = yes
+
+visualizer_type         = wave_filled
+visualizer_look         = *#
+visualizer_color        = green, yellow, red
