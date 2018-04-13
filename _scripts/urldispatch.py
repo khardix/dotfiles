@@ -27,7 +27,7 @@ FALLBACK = environ.get('BROWSER', 'firefox')
 #: Image viewer for displaying images
 IMAGE = 'feh'
 #: Video playback
-VIDEO = 'mpv --really-quiet --pause'
+VIDEO = 'mpv --really-quiet --x11-name=urlplayer'
 #: Video playback on loop
 VIDEO_LOOP = ' '.join((VIDEO, '--loop'))
 #: Console text/html

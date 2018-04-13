@@ -120,7 +120,7 @@ assign [class="^Firefox"]       → number $web
 assign [class="^Thunderbird"]   → number $mail
 assign [class="[Zz]athura"]     → number $doc
 assign [title="[Oo]ffice"]      → number $doc
-assign [title="mpv"]            → number $media
+assign [instance="mpv"]         → number $media
 
 # Floating windows
 floating_modifier       $mod
@@ -143,3 +143,9 @@ for_window  [class="[Zz]athura"]            border  1px
 
 # Bar
 exec_always --no-startup-id $HOME/.config/polybar/launch.zsh
+
+# App specific settings
+# => mpv playing online content
+for_window [instance="urlplayer"]   floating                    enable
+for_window [instance="urlplayer"]   move position               center
+for_window [instance="urlplayer"]   focus_on_window_activation  focus
