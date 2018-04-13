@@ -1,6 +1,15 @@
 https://eev.ee/feeds/blog.atom.xml "tech" "blog"
 http://lucumr.pocoo.org/feed.atom tech blog
 
+https://www.root.cz/rss/clanky/             "~Root.cz" tech news czech
+https://www.root.cz/rss/zpravicky/          "!Root.cz" tech flashnews czech
+https://www.abclinuxu.cz/auto/abc.rss       "~ABCLinuxu" tech news czech
+https://www.abclinuxu.cz/auto/zpravicky.rss "!ABCLinuxu" tech flashnews czech
+https://zpravy.aktualne.cz/rss/             "~Aktuálně.cz" news czech
+https://www.archlinux.org/feeds/news/       news updates
+
+"query:Zprávičky:(tags # \"flashnews\")"
+
 https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA "yt" "!Luke Smith (videos)" tech
 https://www.youtube.com/feeds/videos.xml?channel_id=UCU3gwpclVZSYofj616OQKLQ "yt" "!Mischief of Mice" gaming minecraft
 https://www.youtube.com/feeds/videos.xml?channel_id=UCUxc0iEpV8wZV4WLOui0RwQ "yt" "!Fluffy" humor
