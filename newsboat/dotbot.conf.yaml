@@ -1,0 +1,17 @@
+- defaults:
+    link:
+      create: True
+      relink: True
+      force: True
+
+- shell:
+  - description: 'Ensure newsboat directories exist'
+    command: mkdir -p ~/.local/share/newsboat ~/.config/newsboat
+
+- clean:
+  - '~/.config/newsboat/'
+  - '~/.local/share/newsboat'
+
+- link:
+    ~/.config/newsboat/config:
+    ~/.config/newsboat/urls:
