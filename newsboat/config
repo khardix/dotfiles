@@ -3,7 +3,8 @@
 ################################################################################
 
                                    # Basics #
-browser     urldispatch
+browser         urldispatch
+text-width      80
 
                             # VIM-like keybindings #
 bind-key j down
