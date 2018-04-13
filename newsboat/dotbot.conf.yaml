@@ -15,3 +15,10 @@
 - link:
     ~/.config/newsboat/config:
     ~/.config/newsboat/urls:
+
+    ~/.config/systemd/user/newsboat-sync.service:
+    ~/.config/systemd/user/newsboat-sync.timer:
+
+- shell:
+  - description: 'Reload systemd services'
+    command: systemctl --user daemon-reload

@@ -1,0 +1,9 @@
+[Unit]
+Description=Periodically sync newsboat articles and state
+
+[Timer]
+OnStartupSec=10s
+OnUnitActiveSec=30min
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,12 @@
+[Unit]
+Description=Synchronization of newsboat data
+After=network-online.target
+Requisite=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/newsboat --execute=reload
+ExecStart=/usr/bin/rsync -a daidalos.khardix.cz:~/.local/share/newsboat/sync %h/.local/share/newsboat/sync
+ExecStart=/usr/bin/newsboat --import-from-file=%h/.local/share/newsboat/sync
+ExecStart=/usr/bin/newsboat --export-to-file=%h/.local/share/newsboat/sync
+ExecStart=/usr/bin/rsync -a %h/.local/share/newsboat/sync daidalos.khardix.cz:~/.local/share/newsboat/sync
