@@ -1,14 +1,18 @@
 https://eev.ee/feeds/blog.atom.xml "tech" "blog"
 
-"query:YouTube Videos:tags#\"yt\""
 https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA "yt" "!Luke Smith (videos)" tech
 https://www.youtube.com/feeds/videos.xml?channel_id=UCU3gwpclVZSYofj616OQKLQ "yt" "!Mischief of Mice" gaming minecraft
 https://www.youtube.com/feeds/videos.xml?channel_id=UCUxc0iEpV8wZV4WLOui0RwQ "yt" "!Fluffy" humor
 https://www.youtube.com/feeds/videos.xml?channel_id=UCFkv_BAbjhbUoecdg4R01Lw "yt" "!Aspec" gaming stellaris
-https://www.youtube.com/feeds/videos.xml?channel_id=UCCODtTcd5M1JavPCOr_Uydg "yt" "!Extra Credits" gaming knowledge
+https://www.youtube.com/feeds/videos.xml?channel_id=UCCODtTcd5M1JavPCOr_Uydg "yt" "!Extra Credits" knowledge
 https://www.youtube.com/feeds/videos.xml?channel_id=UCMlGfpWw-RUdWX_JbLCukXg "yt" "!CppCon" tech "c++"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCSfoxYTlCPFfglckBLrjpsA "yt" "!Miracle of Sound" music
 https://www.youtube.com/feeds/videos.xml?channel_id=UC3XTzVzaHQEd30rQbuvCtTQ "yt" "!Last Week Tonight" humor satire
-https://www.youtube.com/feeds/videos.xml?channel_id=UC3LqW4ijMoENQ2Wv17ZrFJA "yt" "!IdeaChannel" interesting
+https://www.youtube.com/feeds/videos.xml?channel_id=UC3LqW4ijMoENQ2Wv17ZrFJA "yt" "!IdeaChannel" knowledge
 https://www.youtube.com/feeds/videos.xml?channel_id=UC1CSCMwaDubQ4rcYCpX40Eg "yt" "!Gopher" gaming skyrim fallout
 https://www.youtube.com/feeds/videos.xml?channel_id=UC_ViSsVg_3JUDyLS3E2Un5g "yt" "!Direwolf20" gaming minecraft
+
+"query:YouTube -- Tech:(tags # \"yt\") and (tags # \"tech\")"
+"query:YouTube -- Knowledge:(tags # \"yt\") and (tags # \"knowledge\")"
+"query:YouTube -- Humor:(tags # \"yt\") and (tags # \"humor\")"
+"query:YouTube -- Games:(tags # \"yt\") and (tags # \"gaming\")"
