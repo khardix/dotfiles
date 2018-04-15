@@ -3,8 +3,12 @@
 ################################################################################
 
                                    # Basics #
-browser         urldispatch
-text-width      80
+browser                 urldispatch
+text-width              80
+prepopulate-query-feeds yes
+refresh-on-startup      yes
+reload-threads          4
+toggleitemread-jumps-to-next-unread yes
 
                             # VIM-like keybindings #
 bind-key j down
@@ -25,6 +29,8 @@ bind-key N prev-unread
 bind-key D pb-download
 bind-key U show-urls
 bind-key x pb-delete
+
+bind-key o open-in-browser-and-mark-read
 
                                # Look and Feel #
 articlelist-format      "%4i %f %D %?T?|%-20T| ?%t"
