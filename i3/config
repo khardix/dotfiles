@@ -53,6 +53,7 @@ bindsym     $mod+bracketright   exec    mpc next
 bindsym     $mod+Prior          exec    amixer sset Master unmute 5%+
 bindsym     $mod+Next           exec    amixer sset Master unmute 5%-
 bindsym     $mod+m              exec    amixer sset Master toggle
+bindsym     $mod+n              exec    st -c music -e tmux new-session -As music ncmpcpp
 # => Movement
 bindsym     $mod+h              focus   left
 bindsym     $mod+j              focus   down
