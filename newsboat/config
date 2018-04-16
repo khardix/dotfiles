@@ -30,8 +30,6 @@ bind-key D pb-download
 bind-key U show-urls
 bind-key x pb-delete
 
-bind-key o open-in-browser-and-mark-read
-
                                # Look and Feel #
 articlelist-format      "%4i %f %D %?T?|%-20T| ?%t"
 
