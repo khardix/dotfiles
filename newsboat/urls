@@ -26,3 +26,5 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UC_ViSsVg_3JUDyLS3E2Un5g "yt
 "query:YouTube -- Knowledge:(tags # \"yt\") and (tags # \"knowledge\")"
 "query:YouTube -- Humor:(tags # \"yt\") and (tags # \"humor\")"
 "query:YouTube -- Games:(tags # \"yt\") and (tags # \"gaming\")"
+
+https://steamcommunity.com/games/281990/rss/    "~Stellaris" stellaris gaming
