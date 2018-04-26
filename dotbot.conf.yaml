@@ -29,7 +29,7 @@
 
     ~/.config/zathura/zathurarc:
 
-    ~/.ncmpcpp/config: ncmpcpp/config
+    ~/.config/ncmpcpp: ncmpcpp/
     ~/.mpdscribble/mpdscribble.conf: mpdscribble/mpdscribble.conf
 
     ~/.config/mpv/config:
