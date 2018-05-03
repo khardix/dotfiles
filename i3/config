@@ -39,6 +39,8 @@ bindsym     $mod+space          floating    toggle
 bindsym     $mod+f              fullscreen  toggle
 bindsym     $mod+w              layout      toggle splitv splith tabbed
 bindsym     $mod+Shift+w        layout      tabbed
+bindsym     $mod+g              splith
+bindsym     $mod+v              splitv
 # => Lauchers
 bindsym     $mod+Return         exec    st -e tmux
 bindsym     $mod+d              exec    dmenu_run -sb '$green'
@@ -55,6 +57,7 @@ bindsym     $mod+Next           exec    amixer sset Master unmute 5%-
 bindsym     $mod+m              exec    amixer sset Master toggle
 bindsym     $mod+n              exec    st -c music -e tmux new-session -As music ncmpcpp
 # => Movement
+bindsym     $mod+a              focus   parent
 bindsym     $mod+h              focus   left
 bindsym     $mod+j              focus   down
 bindsym     $mod+k              focus   up
