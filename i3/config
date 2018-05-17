@@ -50,11 +50,17 @@ bindsym     $mod+r              exec    st -e ranger
 # => Media
 bindsym     --release Pause     exec    mpc pause & slock wchaway lock && wchaway unlock
 bindsym     $mod+p              exec    mpc toggle
+bindsym     XF86AudioPlay       exec    mpc toggle
 bindsym     $mod+bracketleft    exec    mpc prev
+bindsym     XF86AudioPrev       exec    mpc prev
 bindsym     $mod+bracketright   exec    mpc next
+bindsym     XF86AudioNext       exec    mpc next
 bindsym     $mod+Prior          exec    amixer sset Master unmute 5%+
+bindsym     XF86AudioRaiseVolume exec    amixer sset Master unmute 5%+
 bindsym     $mod+Next           exec    amixer sset Master unmute 5%-
+bindsym     XF86AudioLowerVolume exec    amixer sset Master unmute 5%-
 bindsym     $mod+m              exec    amixer sset Master toggle
+bindsym     XF86AudioMute       exec    amixer sset Master toggle
 bindsym     $mod+n              exec    st -c music -e tmux new-session -As music ncmpcpp
 # => Movement
 bindsym     $mod+a              focus   parent
@@ -77,7 +83,7 @@ bindsym     $mod+6              workspace   number $virt
 bindsym     $mod+7              workspace   number $mail
 bindsym     $mod+8              workspace   number  8
 bindsym     $mod+9              workspace   number  9
-bindsym     $mod+10             workspace   number 10
+bindsym     $mod+0              workspace   number $chat
 bindsym     $mod+minus          scratchpad  show
 bindsym     $mod+Left           workspace   prev
 bindsym     $mod+Right          workspace   next
