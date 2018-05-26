@@ -23,6 +23,8 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UC3LqW4ijMoENQ2Wv17ZrFJA "yt
 https://www.youtube.com/feeds/videos.xml?channel_id=UC1CSCMwaDubQ4rcYCpX40Eg "yt" "!Gopher" gaming skyrim fallout
 https://www.youtube.com/feeds/videos.xml?channel_id=UC_ViSsVg_3JUDyLS3E2Un5g "yt" "!Direwolf20" gaming minecraft
 
+http://pyvideo.org/feeds/all.rss.xml    "yt" "!PyVideo" tech
+
 "query:YouTube -- Tech:(tags # \"yt\") and (tags # \"tech\")"
 "query:YouTube -- Knowledge:(tags # \"yt\") and (tags # \"knowledge\")"
 "query:YouTube -- Humor:(tags # \"yt\") and (tags # \"humor\")"
