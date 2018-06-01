@@ -12,6 +12,8 @@ https://www.archlinux.org/feeds/news/       news updates
 
 "query:Zprávičky:(tags # \"flashnews\")"
 
+https://www.gamingonlinux.com/article_rss.php gaming linux
+
 https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA "yt" "!Luke Smith (videos)" tech
 https://www.youtube.com/feeds/videos.xml?channel_id=UCU3gwpclVZSYofj616OQKLQ "yt" "!Mischief of Mice" gaming minecraft
 https://www.youtube.com/feeds/videos.xml?channel_id=UCUxc0iEpV8wZV4WLOui0RwQ "yt" "!Fluffy" humor
